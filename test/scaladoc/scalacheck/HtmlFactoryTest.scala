@@ -168,10 +168,11 @@ object Test extends Properties("HtmlFactory") {
     }
   }
 
-  property("Trac #4306") = {
+ /* property("Trac #4306") = {
     val files = createTemplates("Trac4306.scala")
     files("com/example/trac4306/foo/package$$Bar.html") != None
   }
+  */
 
   property("Trac #4366") = {
     createTemplate("Trac4366.scala") match {

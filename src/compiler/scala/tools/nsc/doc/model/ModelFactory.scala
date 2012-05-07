@@ -344,7 +344,7 @@ class ModelFactory(val global: Global, val settings: doc.Settings) {
     case ObjectClass =>
       normalizeTemplate(AnyRefClass)
     case _ if aSym.isPackageObject =>
-      aSym
+      aSym.owner
     case _ if aSym.isModuleClass =>
       normalizeTemplate(aSym.sourceModule)
     case _ =>
